@@ -18,7 +18,7 @@ function ThemeToggle() {
 
 export function Header() {
   return (
-    <header className="sticky top-0 z-40 w-full border-b bg-background/85 backdrop-blur">
+    <header className="sticky top-0 z-40 w-full border-b bg-background/85 shadow-[0_1px_8px_rgba(0,0,0,0.04)] backdrop-blur">
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-4 sm:px-6">
         <Link to="/" className="flex items-center gap-2">
           <span className="flex h-8 w-8 items-center justify-center rounded-full bg-primary font-display text-sm font-bold text-primary-foreground">
