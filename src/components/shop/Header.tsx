@@ -20,6 +20,13 @@ export function Header() {
           >
             Shop
           </Link>
+          <Link
+            to="/tasks"
+            className="rounded-full px-4 py-2 text-sm font-medium text-muted-foreground transition-colors hover:bg-accent hover:text-accent-foreground"
+          >
+            Tasks
+          </Link>
+
           <CartDrawer />
         </nav>
       </div>
