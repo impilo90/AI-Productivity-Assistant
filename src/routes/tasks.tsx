@@ -4,7 +4,12 @@ import { Header } from "@/components/shop/Header";
 import { Footer } from "@/components/shop/Footer";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { useTaskStore, type TaskStatus } from "@/stores/taskStore";
+import {
+  useTaskStore,
+  TASK_CATEGORIES,
+  type TaskCategory,
+  type TaskStatus,
+} from "@/stores/taskStore";
 import { Check, Circle, Loader, X } from "lucide-react";
 
 export const Route = createFileRoute("/tasks")({
@@ -39,13 +44,21 @@ const FILTERS: { key: TaskStatus | "all"; label: string }[] = [
 function TasksPage() {
   const { tasks, addTask, setStatus, removeTask, clearDone } = useTaskStore();
   const [title, setTitle] = useState("");
+  const [category, setCategory] = useState<TaskCategory>("Personal");
   const [filter, setFilter] = useState<TaskStatus | "all">("all");
+  const [categoryFilter, setCategoryFilter] = useState<TaskCategory | "all">(
+    "all",
+  );
   const [hydrated, setHydrated] = useState(false);
 
   useEffect(() => setHydrated(true), []);
 
   const visible = hydrated
-    ? tasks.filter((t) => filter === "all" || t.status === filter)
+    ? tasks.filter(
+        (t) =>
+          (filter === "all" || t.status === filter) &&
+          (categoryFilter === "all" || t.category === categoryFilter),
+      )
     : [];
   const open = tasks.filter((t) => t.status !== "done").length;
 
