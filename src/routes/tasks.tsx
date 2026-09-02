@@ -82,7 +82,7 @@ function TasksPage() {
           onSubmit={(e) => {
             e.preventDefault();
             if (!title.trim()) return;
-            addTask(title);
+            addTask(title, category);
             setTitle("");
           }}
           className="flex gap-2"
@@ -94,10 +94,38 @@ function TasksPage() {
             aria-label="New task"
             className="h-11 rounded-full border-border/70 bg-transparent px-5"
           />
+          <select
+            value={category}
+            onChange={(e) => setCategory(e.target.value as TaskCategory)}
+            aria-label="Task category"
+            className="h-11 rounded-full border border-border/70 bg-transparent px-4 text-sm text-foreground"
+          >
+            {TASK_CATEGORIES.map((c) => (
+              <option key={c} value={c}>
+                {c}
+              </option>
+            ))}
+          </select>
           <Button type="submit" className="h-11 rounded-full px-6">
             Add
           </Button>
         </form>
+
+        <div className="mt-4 flex flex-wrap gap-1.5">
+          {(["all", ...TASK_CATEGORIES] as const).map((c) => (
+            <button
+              key={c}
+              onClick={() => setCategoryFilter(c)}
+              className={`rounded-full border px-3 py-1 text-xs font-medium transition-colors ${
+                categoryFilter === c
+                  ? "border-primary bg-primary/10 text-primary"
+                  : "border-border/70 text-muted-foreground hover:text-foreground"
+              }`}
+            >
+              {c === "all" ? "All categories" : c}
+            </button>
+          ))}
+        </div>
 
         <div className="mt-8 flex items-center justify-between border-b pb-3">
           <div className="flex gap-1">
@@ -147,6 +175,9 @@ function TasksPage() {
                 }`}
               >
                 {t.title}
+              </span>
+              <span className="rounded-full bg-secondary px-2.5 py-0.5 text-[11px] font-medium text-secondary-foreground">
+                {t.category}
               </span>
               <button
                 onClick={() => removeTask(t.id)}
