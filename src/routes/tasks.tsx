@@ -151,9 +151,12 @@ function TasksPage() {
           </button>
         </div>
 
-        <ul className="divide-y">
+        <ul className="mt-2 space-y-2">
           {visible.map((t) => (
-            <li key={t.id} className="group flex items-center gap-3 py-4">
+            <li
+              key={t.id}
+              className="group flex items-center gap-3 rounded-xl border border-border/60 bg-card px-4 py-3.5 shadow-sm transition-shadow hover:shadow-md"
+            >
               <button
                 onClick={() => setStatus(t.id, next(t.status))}
                 aria-label={`Mark task as ${next(t.status)}`}
