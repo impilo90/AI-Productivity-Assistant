@@ -21,11 +21,11 @@ export function Header() {
     <header className="sticky top-0 z-40 w-full border-b bg-background/85 shadow-[0_1px_8px_rgba(0,0,0,0.04)] backdrop-blur">
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-4 sm:px-6">
         <Link to="/" className="flex items-center gap-2">
-          <span className="flex h-8 w-8 items-center justify-center rounded-full bg-primary font-display text-sm font-bold text-primary-foreground">
+          <span className="flex h-8 w-8 items-center justify-center rounded-md bg-primary font-display text-sm font-bold text-primary-foreground">
             L
           </span>
-          <span className="font-display text-lg font-semibold tracking-tight">
-            Launch Pad
+          <span className="font-display text-lg font-bold uppercase tracking-tighter">
+            Launch <span className="text-primary">Pad</span>
           </span>
         </Link>
         <nav className="flex items-center gap-2">
