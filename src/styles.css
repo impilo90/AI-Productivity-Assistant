@@ -5,9 +5,9 @@
 @custom-variant dark (&:is(.dark *));
 
 /*
- * Design system — "Launch Pad"
- * Warm editorial commerce: paper, espresso ink, clay accent.
- * All colors in oklch. Fonts: Fraunces (display) + DM Sans (body).
+ * Design system — "Launch Pad — REBUILD • BUILD • SELL"
+ * Industrial workshop marketplace: slate blues, electric blue, orange tool accent.
+ * All colors in oklch. Fonts: Space Grotesk (display) + DM Sans (body).
  */
 
 @theme inline {
@@ -18,7 +18,7 @@
   --radius-2xl: calc(var(--radius) + 8px);
   --radius-3xl: calc(var(--radius) + 12px);
   --radius-4xl: calc(var(--radius) + 16px);
-  --font-display: "Fraunces", ui-serif, Georgia, serif;
+  --font-display: "Space Grotesk", ui-sans-serif, system-ui, sans-serif;
   --font-sans: "DM Sans", ui-sans-serif, system-ui, sans-serif;
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -39,6 +39,11 @@
   --color-border: var(--border);
   --color-input: var(--input);
   --color-ring: var(--ring);
+  --color-tool: var(--tool);
+  --color-tool-foreground: var(--tool-foreground);
+  --color-tile: var(--tile);
+  --color-tile-foreground: var(--tile-foreground);
+  --color-tile-muted: var(--tile-muted);
   --color-chart-1: var(--chart-1);
   --color-chart-2: var(--chart-2);
   --color-chart-3: var(--chart-3);
