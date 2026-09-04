@@ -78,17 +78,17 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Launch Pad — Thoughtful Goods, Ready for Liftoff" },
+      { title: "Rebuild, Build and Sell — Thoughtful Goods, Ready for Liftoff" },
       {
         name: "description",
         content:
-          "Launch Pad is a curated online shop for well-made everyday goods, with secure Shopify checkout.",
+          "Rebuild, Build and Sell is a curated online shop for well-made everyday goods, with secure Shopify checkout.",
       },
-      { property: "og:title", content: "Launch Pad — Thoughtful Goods, Ready for Liftoff" },
+      { property: "og:title", content: "Rebuild, Build and Sell — Thoughtful Goods, Ready for Liftoff" },
       {
         property: "og:description",
         content:
-          "Launch Pad is a curated online shop for well-made everyday goods, with secure Shopify checkout.",
+          "Rebuild, Build and Sell is a curated online shop for well-made everyday goods, with secure Shopify checkout.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },

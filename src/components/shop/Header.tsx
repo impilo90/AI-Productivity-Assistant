@@ -22,10 +22,10 @@ export function Header() {
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-4 sm:px-6">
         <Link to="/" className="flex items-center gap-2">
           <span className="flex h-8 w-8 items-center justify-center rounded-md bg-primary font-display text-sm font-bold text-primary-foreground">
-            L
+            R
           </span>
-          <span className="font-display text-lg font-bold uppercase tracking-tighter">
-            Launch <span className="text-primary">Pad</span>
+          <span className="font-display text-base font-bold uppercase tracking-tighter sm:text-lg">
+            Rebuild <span className="text-primary">Build</span> Sell
           </span>
         </Link>
         <nav className="flex items-center gap-2">
