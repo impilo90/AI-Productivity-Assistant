@@ -11,13 +11,13 @@ import { ArrowRight, PackageOpen, Package } from "lucide-react";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Launch Pad — Rebuild. Build. Sell." },
+      { title: "Rebuild, Build and Sell — Technical Standards Marketplace" },
       {
         name: "description",
         content:
           "The technical standards marketplace: certified rebuilt tech, new components, and instant trade-in quotes. Secure Shopify checkout.",
       },
-      { property: "og:title", content: "Launch Pad — Rebuild. Build. Sell." },
+      { property: "og:title", content: "Rebuild, Build and Sell — Technical Standards Marketplace" },
       {
         property: "og:description",
         content:
@@ -49,7 +49,7 @@ function Index() {
         <div className="mb-10 flex flex-wrap items-end justify-between gap-6 border-b pb-6">
           <div>
             <h1 className="font-display text-4xl font-bold uppercase tracking-tighter md:text-5xl">
-              Launch <span className="text-primary">Pad</span>
+              Rebuild, <span className="text-primary">Build</span> and Sell
             </h1>
             <p className="mt-2 text-xs font-medium uppercase tracking-widest text-muted-foreground">
               The Technical Standards Marketplace

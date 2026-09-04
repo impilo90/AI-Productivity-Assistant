@@ -13,7 +13,7 @@ export function Footer() {
             Shipping hub
           </a>
         </div>
-        <p>© {new Date().getFullYear()} Launch Pad Integrated Tech</p>
+        <p>© {new Date().getFullYear()} Rebuild, Build and Sell</p>
       </div>
     </footer>
   );

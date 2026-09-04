@@ -16,17 +16,17 @@ export const Route = createFileRoute("/tasks")({
   component: TasksPage,
   head: () => ({
     meta: [
-      { title: "Tasks — Launch Pad Studio Board" },
+      { title: "Tasks — Rebuild, Build and Sell Studio Board" },
       {
         name: "description",
         content:
-          "A minimal task board for running Launch Pad: capture work, move it through doing, and mark it done.",
+          "A minimal task board for running Rebuild, Build and Sell: capture work, move it through doing, and mark it done.",
       },
-      { property: "og:title", content: "Tasks — Launch Pad Studio Board" },
+      { property: "og:title", content: "Tasks — Rebuild, Build and Sell Studio Board" },
       {
         property: "og:description",
         content:
-          "A minimal task board for running Launch Pad: capture work, move it through doing, and mark it done.",
+          "A minimal task board for running Rebuild, Build and Sell: capture work, move it through doing, and mark it done.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },

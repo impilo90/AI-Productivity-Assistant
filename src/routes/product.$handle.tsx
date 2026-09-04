@@ -13,15 +13,15 @@ import { useCartSync } from "@/hooks/useCartSync";
 export const Route = createFileRoute("/product/$handle")({
   head: () => ({
     meta: [
-      { title: "Product — Launch Pad" },
+      { title: "Product — Rebuild, Build and Sell" },
       {
         name: "description",
-        content: "Product details, pricing and secure checkout at Launch Pad.",
+        content: "Product details, pricing and secure checkout at Rebuild, Build and Sell.",
       },
-      { property: "og:title", content: "Product — Launch Pad" },
+      { property: "og:title", content: "Product — Rebuild, Build and Sell" },
       {
         property: "og:description",
-        content: "Product details, pricing and secure checkout at Launch Pad.",
+        content: "Product details, pricing and secure checkout at Rebuild, Build and Sell.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
